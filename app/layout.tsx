@@ -6,6 +6,8 @@ import ClientLayout from "@/components/layout/ClientLayout";
 const inter = Inter({ subsets: ["latin", "vietnamese"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://htp-portfolio.vercel.app'),
+
   title: {
     default: "Hà Tấn Phát | Full Stack Developer",
     template: "%s | Hà Tấn Phát"
@@ -14,10 +16,11 @@ export const metadata: Metadata = {
   keywords: ["Hà Tấn Phát", "Full Stack Developer", "React Developer", "Node.js", "TypeScript", "Web Developer Vietnam"],
   authors: [{ name: "Hà Tấn Phát" }],
 
-  // Open Graph 
+  // Open Graph
   openGraph: {
     type: "website",
     locale: "en_US",
+    url: "https://htp-portfolio.vercel.app",
     title: "Hà Tấn Phát | Full Stack Developer",
     description: "Full Stack Developer specializing in React.js, TypeScript, Node.js. View my projects and get in touch.",
     siteName: "Hà Tấn Phát Portfolio",
@@ -61,6 +64,7 @@ export default function RootLayout({
           }}
         />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://htp-portfolio.vercel.app" />
       </head>
       <body className={inter.className}>
         <ClientLayout>

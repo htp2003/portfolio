@@ -35,7 +35,7 @@ const socialLinks = [
   {
     icon: FiLinkedin,
     label: 'LinkedIn',
-    href: 'https://linkedin.com',
+    href: 'https://www.linkedin.com/in/h%C3%A0-t%E1%BA%A5n-ph%C3%A1t-41008727a',
     username: 'Hà Tấn Phát',
   },
 ];
@@ -54,17 +54,17 @@ export default function ContactContent() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h1 
+          <h1
             className="text-5xl lg:text-6xl font-bold mb-6"
             style={{ color: isDark ? '#ffffff' : '#111827' }}
           >
             Get In Touch
           </h1>
-          <p 
+          <p
             className="text-xl max-w-2xl mx-auto"
             style={{ color: isDark ? '#d1d5db' : '#4b5563' }}
           >
-            I'm currently open to new opportunities and collaborations. 
+            I'm currently open to new opportunities and collaborations.
             Feel free to reach out if you'd like to work together!
           </p>
         </motion.div>
@@ -72,7 +72,7 @@ export default function ContactContent() {
         {/* Contact Info Cards */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           {contactInfo.map((info, index) => (
-            <ContactCard 
+            <ContactCard
               key={info.label}
               info={info}
               index={index}
@@ -92,7 +92,7 @@ export default function ContactContent() {
             borderColor: isDark ? 'rgba(75, 85, 99, 0.3)' : 'rgba(209, 213, 219, 0.5)',
           }}
         >
-          <h2 
+          <h2
             className="text-2xl font-bold mb-6"
             style={{ color: isDark ? '#f3f4f6' : '#1f2937' }}
           >
@@ -100,7 +100,7 @@ export default function ContactContent() {
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             {socialLinks.map((social) => (
-              <SocialLink 
+              <SocialLink
                 key={social.label}
                 social={social}
                 isDark={isDark}
@@ -116,7 +116,7 @@ export default function ContactContent() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="text-center mt-12"
         >
-          <p 
+          <p
             className="text-lg mb-6"
             style={{ color: isDark ? '#d1d5db' : '#4b5563' }}
           >
@@ -142,12 +142,12 @@ export default function ContactContent() {
 }
 
 // Contact Card Component
-function ContactCard({ 
-  info, 
+function ContactCard({
+  info,
   index,
-  isDark 
-}: { 
-  info: any; 
+  isDark
+}: {
+  info: any;
   index: number;
   isDark: boolean;
 }) {
@@ -176,18 +176,18 @@ function ContactCard({
           backgroundColor: isDark ? 'rgba(55, 65, 81, 0.8)' : 'rgba(243, 244, 246, 0.8)',
         }}
       >
-        <Icon 
+        <Icon
           className="text-3xl"
           style={{ color: isDark ? '#f3f4f6' : '#111827' }}
         />
       </motion.div>
-      <h3 
+      <h3
         className="text-lg font-semibold mb-2"
         style={{ color: isDark ? '#f3f4f6' : '#1f2937' }}
       >
         {info.label}
       </h3>
-      <p 
+      <p
         className="text-sm break-all"
         style={{ color: isDark ? '#d1d5db' : '#4b5563' }}
       >
@@ -198,10 +198,10 @@ function ContactCard({
 }
 
 // Social Link Component
-function SocialLink({ 
+function SocialLink({
   social,
-  isDark 
-}: { 
+  isDark
+}: {
   social: any;
   isDark: boolean;
 }) {
@@ -220,25 +220,25 @@ function SocialLink({
         borderColor: isDark ? 'rgba(75, 85, 99, 0.3)' : 'rgba(209, 213, 219, 0.5)',
       }}
     >
-      <div 
+      <div
         className="w-12 h-12 rounded-full flex items-center justify-center"
         style={{
           backgroundColor: isDark ? 'rgba(75, 85, 99, 0.5)' : 'rgba(229, 231, 235, 0.8)',
         }}
       >
-        <Icon 
+        <Icon
           className="text-2xl"
           style={{ color: isDark ? '#f3f4f6' : '#111827' }}
         />
       </div>
       <div className="flex-1">
-        <h4 
+        <h4
           className="font-semibold"
           style={{ color: isDark ? '#f3f4f6' : '#1f2937' }}
         >
           {social.label}
         </h4>
-        <p 
+        <p
           className="text-sm"
           style={{ color: isDark ? '#9ca3af' : '#6b7280' }}
         >
