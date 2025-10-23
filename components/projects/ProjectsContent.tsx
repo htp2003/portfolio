@@ -71,21 +71,13 @@ function ProjectCard({
                 borderColor: isDark ? 'rgba(75, 85, 99, 0.3)' : 'rgba(209, 213, 219, 0.5)',
             }}
         >
-            {/* Project Image Placeholder */}
-            <div
-                className="w-full h-48 flex items-center justify-center relative overflow-hidden"
-                style={{
-                    background: isDark
-                        ? 'linear-gradient(135deg, #374151 0%, #1f2937 100%)'
-                        : 'linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%)',
-                }}
-            >
-                <span
-                    className="text-4xl font-bold"
-                    style={{ color: isDark ? '#6b7280' : '#9ca3af' }}
-                >
-                    {project.title}
-                </span>
+            {/* Project Image */}
+            <div className="w-full h-48 relative overflow-hidden">
+                <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                />
                 {/* Gradient overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>

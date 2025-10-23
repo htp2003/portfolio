@@ -24,7 +24,7 @@ export default function Navbar() {
                         href="/"
                         className="text-2xl font-bold hover:scale-105 transition-transform duration-300"
                     >
-                        HPT
+HTP
                     </Link>
 
                     {/* Navigation Links */}
