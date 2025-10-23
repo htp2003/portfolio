@@ -46,3 +46,13 @@ body {
 .animate-gradient {
   animation: gradient 15s ease infinite;
 }
+
+/*smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/*hide scrollbar when animate */
+html.transitioning {
+  overflow: hidden;
+}
