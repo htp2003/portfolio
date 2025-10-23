@@ -69,6 +69,6 @@ export const projectsData: Project[] = [
         ],
         github: 'https://github.com/htp2003/pos-system',
         category: 'Full-stack',
-        year: '2025',
+        year: '2024',
     },
 ];
