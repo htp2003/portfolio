@@ -102,22 +102,14 @@ export default function Hero() {
                             {/* Glass Card Background */}
                             <div className="absolute inset-0 glass rounded-3xl" />
 
-                            {/* Avatar Image Placeholder */}
+                            {/* Avatar Image */}
                             <div className="relative w-full h-full p-8">
-                                <div
-                                    className="w-full h-full rounded-2xl flex items-center justify-center overflow-hidden"
-                                    style={{
-                                        background: isDark
-                                            ? 'linear-gradient(to bottom right, #4b5563, #374151)'
-                                            : 'linear-gradient(to bottom right, #f3f4f6, #e5e7eb)',
-                                    }}
-                                >
-                                    <span
-                                        className="text-8xl font-bold"
-                                        style={{ color: isDark ? '#d1d5db' : '#9ca3af' }}
-                                    >
-                                        HPT
-                                    </span>
+                                <div className="w-full h-full rounded-2xl overflow-hidden">
+                                    <img
+                                        src="/images/avatar.jpg"
+                                        alt="Hà Tấn Phát"
+                                        className="w-full h-full object-cover"
+                                    />
                                 </div>
                             </div>
 
