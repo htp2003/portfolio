@@ -107,8 +107,8 @@ export default function Navbar() {
                                         href={link.href}
                                         onClick={() => setIsMenuOpen(false)}
                                         className={`relative px-6 py-3 rounded-full transition-colors duration-300 text-center ${isActive
-                                                ? 'bg-black dark:bg-white text-white dark:text-black'
-                                                : 'hover:bg-gray-100 dark:hover:bg-gray-800'
+                                            ? 'bg-black dark:bg-white text-white dark:text-black'
+                                            : 'hover:bg-gray-100 dark:hover:bg-gray-800'
                                             }`}
                                     >
                                         {link.label}
